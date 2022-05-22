@@ -30,4 +30,8 @@ public abstract class AbstractMapService<T,ID> {
         map.remove(id);
     }
 
+    void update(ID id, T object){
+        map.put(id,object);
+    }
+
 }
