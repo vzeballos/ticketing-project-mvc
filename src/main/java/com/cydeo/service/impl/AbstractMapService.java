@@ -22,10 +22,6 @@ public abstract class AbstractMapService<T,ID> {
         return map.get(id);
     }
 
-    void delete(T object){
-        map.remove(object);
-    }
-
     void deleteById(ID id){
         map.remove(id);
     }
